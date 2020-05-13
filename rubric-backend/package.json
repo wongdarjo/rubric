@@ -1,5 +1,5 @@
 {
-  "name": "rubric",
+  "name": "rubric-strapi",
   "private": true,
   "version": "0.1.0",
   "description": "A Strapi application",
@@ -11,24 +11,23 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "knex": "<0.20.0",
-    "pg": "^8.1.0",
-    "sqlite3": "latest",
     "strapi": "3.0.0-beta.20.3",
     "strapi-admin": "3.0.0-beta.20.3",
-    "strapi-connector-bookshelf": "3.0.0-beta.20.3",
-    "strapi-plugin-content-manager": "3.0.0-beta.20.3",
+    "strapi-utils": "3.0.0-beta.20.3",
     "strapi-plugin-content-type-builder": "3.0.0-beta.20.3",
+    "strapi-plugin-content-manager": "3.0.0-beta.20.3",
+    "strapi-plugin-users-permissions": "3.0.0-beta.20.3",
     "strapi-plugin-email": "3.0.0-beta.20.3",
     "strapi-plugin-upload": "3.0.0-beta.20.3",
-    "strapi-plugin-users-permissions": "3.0.0-beta.20.3",
-    "strapi-utils": "3.0.0-beta.20.3"
+    "strapi-connector-bookshelf": "3.0.0-beta.20.3",
+    "knex": "<0.20.0",
+    "sqlite3": "latest"
   },
   "author": {
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "c7e2829f-d73b-44fa-ac2c-93905fe6b76c"
+    "uuid": "e7603ee0-a78e-4982-873b-9c7dc6750826"
   },
   "engines": {
     "node": ">=10.0.0",
