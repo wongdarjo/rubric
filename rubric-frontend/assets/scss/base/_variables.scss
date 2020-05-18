@@ -1,15 +1,17 @@
 //-------------------- Base Colors --------------------//
 
-$white:							#fff;
-$black:							#000;
+$white-color:					#fff;
+$black-color:					#000;
+$dark-color:					#333;
+$grey-color:                    #ddd;
 
 $theme-color:                   #3498db;
 $secondary-color:				#2ecc71;
-$body-color:                    $black;
-$heading-color:                 $black;
+$body-color:                    $dark-color;
+$heading-color:                 $black-color;
 
-$dark-color:                    $black;
-$light-color:                   $white;
+$dark-color:                    $dark-color;
+$light-color:                   $white-color;
 
 //-------------------- Border --------------------//
 
@@ -53,13 +55,6 @@ $tablet-width: 800px;
 $desktop-width: 1024px;
 $desktop-lg-width: 1440px;
 
-
-//-------------------- Transition --------------------//
-
-$ease-in-out-5s: 				all .5s ease-in-out;
-$ease-in-out-3s: 				all .3s ease-in-out;
-$ease-in-out-2s: 				all .2s ease-in-out;
-
 //-------------------- Box Shadow --------------------//
 
-$box-shadow-default:			5px 7px 15px 0px #ddd;
+$box-shadow-default:			5px 7px 15px 0px $grey-color;
