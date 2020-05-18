@@ -1,0 +1,18 @@
+.container {
+	margin-left: auto;
+	margin-right: auto;
+
+	@include desktop {
+		max-width: 1024px;
+    }
+    
+    @include mobile {
+        margin-left: rem(16px);
+	    margin-right: rem(16px);
+    }
+}
+
+.wrapper {
+	padding: 1rem;
+	min-height: 100vh;
+}

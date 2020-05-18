@@ -1,0 +1,13 @@
+.c-list {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+
+	>li {
+		display: inline-block;
+		list-style: none;
+		vertical-align: top;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+}

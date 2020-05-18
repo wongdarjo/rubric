@@ -1,10 +1,10 @@
-import Header from './Header';
+import Head from './Head';
 import css from '../assets/scss/style.scss';
 
 const Layout = props => {
     return (
         <main className={css.wrapper}>
-            <Header />
+            <Head />
             {props.children}
         </main>
     )

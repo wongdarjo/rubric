@@ -1,17 +1,36 @@
 import Layout from '../components/Layout';
-import Socmed from '../components/Socmed';
+import Link from 'next/link';
 import css from '../assets/scss/style.scss';
+import axios from 'axios';
 
-export default function Home() {
+const Index = (props) => {
   return (
       <Layout>
-        <div className={css['card']}>
-          <h1 className={css['card__title']}>My site is getting a little tune up and some love.</h1>
-          <p>Scheduled maintenance is currently in progress.</p>
-          <p>I'll be back soon!</p>
-          <p>&mdash; <b>Bima Indra</b></p>
-          <Socmed />
+        <div className={css['container']}>
+          {props.data.map(i => (
+              <div className={css['c-card']} key={i.id}>
+                <h2 className={css['c-card__title']}>{i.title}</h2>
+                <p className={css['c-card__description']}>{i.description}</p>
+                <Link href={`/article/detail?title=${i.title}`}>
+                  <a className={css['c-link']}>Read more...</a>
+                </Link>
+              </div>
+          ))}
         </div>
+
       </Layout>
   )
 }
+
+Index.getInitialProps = async function() {
+  const res = await axios.get('http://localhost:1337/articles');
+  const data = await res.data;
+
+  console.log(`Show data fetched. Count: ${data.length}`);
+
+  return {
+    data: data
+  }
+}
+
+export default Index;
