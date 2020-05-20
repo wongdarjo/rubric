@@ -3,6 +3,7 @@
     margin-right: auto;
     margin-bottom: 1rem;
     padding: 1rem;
+    border: 1px solid $grey-color;
     @include box-shadow($box-shadow-default);
 
 	&__title {
@@ -11,6 +12,10 @@
     }
 
     &--hovered {
-        
+        transition: box-shadow .5s ease-out;
+
+        &:hover {
+            @include box-shadow(none);
+        }
     }
 }
