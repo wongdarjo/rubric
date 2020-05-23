@@ -4,6 +4,7 @@
     margin-bottom: 1rem;
     padding: 1rem;
     border: 1px solid $grey-color;
+    border-radius: rem(4px);
     @include box-shadow($box-shadow-default);
 
 	&__title {
