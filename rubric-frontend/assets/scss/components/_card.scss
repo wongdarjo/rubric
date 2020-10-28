@@ -12,6 +12,11 @@
         margin-top: 0;
     }
 
+    &__image {
+        max-width: 100%;
+        margin-bottom: rem(16px);
+    }
+
     &--hovered {
         transition: box-shadow .5s ease-out;
 
